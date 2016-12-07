@@ -1,0 +1,62 @@
+2016-08-12 12:00:38 - PHP Warning:  imagecreatefromjpeg() [<a href='function.imagecreatefromjpeg'>function.imagecreatefromjpeg</a>]: gd-jpeg, libjpeg: recoverable error: Premature end of JPEG file
+ in /home/u426920284/public_html/system/library/image.php on line 34
+2016-08-12 12:00:38 - PHP Warning:  imagecreatefromjpeg() [<a href='function.imagecreatefromjpeg'>function.imagecreatefromjpeg</a>]: '/home/u426920284/public_html//image/catalog/xenon_super_canbus/Super-Canbus-Fast-Bright-H7-Xenon-HID-kit-55W-12V-5000k_6.jpg' is not a valid JPEG file in /home/u426920284/public_html/system/library/image.php on line 34
+2016-08-12 12:00:38 - PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/u426920284/public_html/system/library/image.php on line 99
+2016-08-12 12:00:38 - PHP Warning:  imagedestroy() expects parameter 1 to be resource, boolean given in /home/u426920284/public_html/system/library/image.php on line 100
+2016-08-26 20:34:37 - PHP Notice:  Undefined index: product_id in /home/u426920284/public_html/catalog/controller/module/viewed.php on line 43
+2016-08-26 20:34:37 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/u426920284/public_html/index.php:98) in /home/u426920284/public_html/catalog/controller/module/viewed.php on line 46
+2016-09-18 19:15:42 - PHP Warning:  fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in /home/u426920284/public_html/system/library/mail.php on line 170
+2016-09-18 19:15:42 - PHP Warning:  fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to email-smtp.us-east-1.amazonaws.com:587 (php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution) in /home/u426920284/public_html/system/library/mail.php on line 170
+2016-09-18 19:15:42 - PHP Notice:  Error: php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution (0) in /home/u426920284/public_html/system/library/mail.php on line 173
+2016-10-12 12:58:17 - PHP Notice:  unserialize() [<a href='function.unserialize'>function.unserialize</a>]: Error at offset 0 of 1 bytes in /home/u426920284/public_html/system/library/cart.php on line 174
+2016-10-12 12:58:17 - PHP Notice:  Undefined index: product_id in /home/u426920284/public_html/system/library/cart.php on line 176
+2016-10-12 12:58:17 - PHP Notice:  unserialize() [<a href='function.unserialize'>function.unserialize</a>]: Error at offset 0 of 1 bytes in /home/u426920284/public_html/system/library/cart.php on line 23
+2016-10-14 8:06:31 - PHP Notice:  Undefined index: fax in /home/u426920284/public_html/catalog/model/account/customer.php on line 141
+2016-10-14 8:06:31 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/u426920284/public_html/index.php:98) in /home/u426920284/public_html/system/library/response.php on line 12
+2016-10-14 8:06:42 - PHP Notice:  Undefined index: fax in /home/u426920284/public_html/catalog/model/account/customer.php on line 141
+2016-10-14 8:06:42 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/u426920284/public_html/index.php:98) in /home/u426920284/public_html/system/library/response.php on line 12
+2016-10-14 8:07:12 - PHP Notice:  Undefined index: fax in /home/u426920284/public_html/catalog/model/account/customer.php on line 141
+2016-10-14 8:07:12 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/u426920284/public_html/index.php:98) in /home/u426920284/public_html/system/library/response.php on line 12
+2016-10-20 15:14:09 - PHP Notice:  Undefined index: company in /home/u426920284/public_html/catalog/model/account/address.php on line 22
+2016-10-20 15:14:09 - PHP Notice:  Undefined index: postcode in /home/u426920284/public_html/catalog/model/account/address.php on line 22
+2016-10-20 15:14:09 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/u426920284/public_html/index.php:98) in /home/u426920284/public_html/system/library/response.php on line 12
+2016-10-20 15:14:13 - PHP Notice:  Undefined index: company in /home/u426920284/public_html/catalog/model/account/address.php on line 22
+2016-10-20 15:14:13 - PHP Notice:  Undefined index: postcode in /home/u426920284/public_html/catalog/model/account/address.php on line 22
+2016-10-20 15:14:13 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/u426920284/public_html/index.php:98) in /home/u426920284/public_html/system/library/response.php on line 12
+2016-10-20 15:14:28 - PHP Notice:  Undefined index: company in /home/u426920284/public_html/catalog/model/account/address.php on line 22
+2016-10-20 15:14:28 - PHP Notice:  Undefined index: postcode in /home/u426920284/public_html/catalog/model/account/address.php on line 22
+2016-10-20 15:14:28 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/u426920284/public_html/index.php:98) in /home/u426920284/public_html/system/library/response.php on line 12
+2016-10-20 15:14:35 - PHP Notice:  Undefined index: company in /home/u426920284/public_html/catalog/model/account/address.php on line 22
+2016-10-20 15:14:35 - PHP Notice:  Undefined index: postcode in /home/u426920284/public_html/catalog/model/account/address.php on line 22
+2016-10-20 15:14:35 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/u426920284/public_html/index.php:98) in /home/u426920284/public_html/system/library/response.php on line 12
+2016-10-20 15:14:59 - PHP Notice:  Undefined index: company in /home/u426920284/public_html/catalog/model/account/address.php on line 22
+2016-10-20 15:14:59 - PHP Notice:  Undefined index: postcode in /home/u426920284/public_html/catalog/model/account/address.php on line 22
+2016-10-20 15:14:59 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/u426920284/public_html/index.php:98) in /home/u426920284/public_html/system/library/response.php on line 12
+2016-10-22 8:52:58 - PHP Notice:  Error: MySQL server has gone away<br />Error No: 2006<br />SELECT * FROM oc_url_alias WHERE `query` = 'category_id=72' in /home/u426920284/public_html/system/library/db/mysqli.php on line 41
+2016-10-22 8:52:58 - PHP Notice:  Trying to get property of non-object in /home/u426920284/public_html/system/modification/catalog/controller/common/seo_url.php on line 110
+2016-10-22 8:52:59 - PHP Notice:  Error: MySQL server has gone away<br />Error No: 2006<br />SELECT * FROM oc_currency ORDER BY title ASC in /home/u426920284/public_html/system/library/db/mysqli.php on line 41
+2016-10-22 8:52:59 - PHP Notice:  Trying to get property of non-object in /home/u426920284/public_html/catalog/model/localisation/currency.php on line 17
+2016-10-22 8:52:59 - PHP Warning:  Invalid argument supplied for foreach() in /home/u426920284/public_html/catalog/model/localisation/currency.php on line 17
+2016-10-22 8:52:59 - PHP Notice:  Error: MySQL server has gone away<br />Error No: 2006<br />SELECT * FROM oc_url_alias WHERE `query` = 'category_id=72' in /home/u426920284/public_html/system/library/db/mysqli.php on line 41
+2016-10-22 8:52:59 - PHP Notice:  Trying to get property of non-object in /home/u426920284/public_html/system/modification/catalog/controller/common/seo_url.php on line 110
+2016-10-22 8:52:59 - PHP Notice:  Error: MySQL server has gone away<br />Error No: 2006<br />SELECT * FROM oc_extension WHERE `type` = 'total' in /home/u426920284/public_html/system/library/db/mysqli.php on line 41
+2016-10-22 8:52:59 - PHP Notice:  Trying to get property of non-object in /home/u426920284/public_html/catalog/model/extension/extension.php on line 6
+2016-10-22 8:52:59 - PHP Warning:  Invalid argument supplied for foreach() in /home/u426920284/public_html/catalog/controller/common/cart.php on line 19
+2016-10-22 8:52:59 - PHP Warning:  array_multisort() [<a href='function.array-multisort'>function.array-multisort</a>]: Argument #3 is expected to be an array or a sort flag in /home/u426920284/public_html/catalog/controller/common/cart.php on line 23
+2016-10-22 8:52:59 - PHP Warning:  Invalid argument supplied for foreach() in /home/u426920284/public_html/catalog/controller/common/cart.php on line 25
+2016-10-23 3:03:14 - PHP Notice:  Undefined index: enquiry in /home/u426920284/public_html/catalog/controller/information/contact.php on line 224
+2016-10-26 6:40:31 - PHP Warning:  fsockopen() [<a href='function.fsockopen'>function.fsockopen</a>]: unable to connect to email-smtp.us-east-1.amazonaws.com:587 (Connection timed out) in /home/u426920284/public_html/system/library/mail.php on line 170
+2016-10-26 6:40:31 - PHP Notice:  Error: Connection timed out (110) in /home/u426920284/public_html/system/library/mail.php on line 173
+2016-11-11 21:27:26 - PHP Notice:  Undefined index: fax in /home/u426920284/public_html/catalog/model/account/customer.php on line 141
+2016-11-11 21:27:26 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/u426920284/public_html/index.php:98) in /home/u426920284/public_html/system/library/response.php on line 12
+2016-11-11 21:27:31 - PHP Notice:  Undefined index: fax in /home/u426920284/public_html/catalog/model/account/customer.php on line 141
+2016-11-11 21:27:31 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/u426920284/public_html/index.php:98) in /home/u426920284/public_html/system/library/response.php on line 12
+2016-11-11 21:28:06 - PHP Notice:  Undefined index: company in /home/u426920284/public_html/catalog/model/account/address.php on line 22
+2016-11-11 21:28:06 - PHP Notice:  Undefined index: postcode in /home/u426920284/public_html/catalog/model/account/address.php on line 22
+2016-11-11 21:28:06 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/u426920284/public_html/index.php:98) in /home/u426920284/public_html/system/library/response.php on line 12
+2016-11-11 21:28:13 - PHP Notice:  Undefined index: company in /home/u426920284/public_html/catalog/model/account/address.php on line 22
+2016-11-11 21:28:13 - PHP Notice:  Undefined index: postcode in /home/u426920284/public_html/catalog/model/account/address.php on line 22
+2016-11-11 21:28:13 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/u426920284/public_html/index.php:98) in /home/u426920284/public_html/system/library/response.php on line 12
+2016-11-11 21:30:53 - PHP Notice:  Undefined index: company in /home/u426920284/public_html/catalog/model/account/address.php on line 22
+2016-11-11 21:30:53 - PHP Notice:  Undefined index: postcode in /home/u426920284/public_html/catalog/model/account/address.php on line 22
+2016-11-11 21:30:53 - PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/u426920284/public_html/index.php:98) in /home/u426920284/public_html/system/library/response.php on line 12

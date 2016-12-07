@@ -130,10 +130,10 @@
                     <?php } else { ?>
                     <?php echo $product['price']; ?>
                     <?php } ?></td>
-                  <td class="text-right"><?php if ($product['quantity'] <= 0) { ?>
-                    <span class="label label-warning"><?php echo $product['quantity']; ?></span>
-                    <?php } elseif ($product['quantity'] <= 5) { ?>
+                  <td class="text-right"><?php if ($product['quantity'] <= 1) { ?>
                     <span class="label label-danger"><?php echo $product['quantity']; ?></span>
+                    <?php } elseif ($product['quantity'] <= 3) { ?>
+                    <span class="label label-warning"><?php echo $product['quantity']; ?></span>
                     <?php } else { ?>
                     <span class="label label-success"><?php echo $product['quantity']; ?></span>
                     <?php } ?></td>

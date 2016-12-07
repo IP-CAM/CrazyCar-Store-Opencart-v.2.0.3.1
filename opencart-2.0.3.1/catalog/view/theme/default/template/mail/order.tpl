@@ -111,7 +111,8 @@
       <?php } ?>
     </tfoot>
   </table>
-  <p style="margin-top: 0px; margin-bottom: 20px;"><?php echo $text_footer; ?></p>
+  <!-- <p style="margin-top: 0px; margin-bottom: 20px;"><?php echo $text_footer; ?></p> -->
+  <p style="margin-top: 0px; margin-bottom: 20px;"><a href="mailto:contactus@crazycarstore.com?Subject=Regarding Order No <?php echo $order_id; ?>" target="_top">contactus@crazycarstore.com</a><?php echo $text_footer; ?></p>
 </div>
 </body>
 </html>

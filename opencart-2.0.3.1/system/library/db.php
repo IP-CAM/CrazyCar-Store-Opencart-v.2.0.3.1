@@ -13,6 +13,8 @@ class DB {
 	}
 
 	public function query($sql) {
+		//$db_log = new Log('db.log');
+		//$db_log->write($sql);
 		return $this->db->query($sql);
 	}
 

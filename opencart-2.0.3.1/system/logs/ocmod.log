@@ -1,0 +1,177 @@
+2016-09-08 11:12:37 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+Modification::refresh - Processing 'Add Out of Stock Stamp'
+Modification::refresh - Done 'Add Out of Stock Stamp'
+----------------------------------------------------------------
+Modification::refresh - Processing 'Adding Blog Tracker To Home'
+Modification::refresh - Done 'Adding Blog Tracker To Home'
+----------------------------------------------------------------
+Modification::refresh - Processing 'Adding Tracker Integration'
+Modification::refresh - Done 'Adding Tracker Integration'
+----------------------------------------------------------------
+Modification::refresh - Processing 'AddingMetaTagsForImage'
+Modification::refresh - Done 'AddingMetaTagsForImage'
+----------------------------------------------------------------
+Modification::refresh - Processing 'Blog SEO'
+Modification::refresh - Done 'Blog SEO'
+----------------------------------------------------------------
+MOD: Easy Blog Simple for oc2011+
+FILE: admin/controller/common/menu.php
+CODE: return $this->load->view('common/menu.tpl', $data);
+LINE: 211
+FILE: admin/view/template/common/menu.tpl
+CODE: <li id="system"><a class="parent"><i class="fa fa-cog fa-fw"></i> <span><?php echo $text_system; ?></span></a>
+LINE: 122
+FILE: catalog/view/theme/default/template/common/footer.tpl
+CODE: <?php foreach ($informations as $information) { ?>
+LINE: 10
+FILE: catalog/controller/common/footer.php
+CODE: $data['informations'] = array();
+LINE: 28
+----------------------------------------------------------------
+Modification::refresh - Processing 'ExtraCODFees'
+Modification::refresh - Done 'ExtraCODFees'
+----------------------------------------------------------------
+Modification::refresh - Processing 'OpenURLWithSpecificOptionAndChangePriceByOptionChange'
+Modification::refresh - Done 'OpenURLWithSpecificOptionAndChangePriceByOptionChange'
+----------------------------------------------------------------
+Modification::refresh - Processing 'Remove Unusful Links'
+Modification::refresh - Done 'Remove Unusful Links'
+----------------------------------------------------------------
+Modification::refresh - Processing 'Sort By Price'
+Modification::refresh - Done 'Sort By Price'
+----------------------------------------------------------------
+2016-09-08 12:03:53 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+Modification::refresh - Processing 'Add Out of Stock Stamp'
+Modification::refresh - Done 'Add Out of Stock Stamp'
+----------------------------------------------------------------
+Modification::refresh - Processing 'Adding Blog Tracker To Home'
+Modification::refresh - Done 'Adding Blog Tracker To Home'
+----------------------------------------------------------------
+Modification::refresh - Processing 'Adding Tracker Integration'
+Modification::refresh - Done 'Adding Tracker Integration'
+----------------------------------------------------------------
+Modification::refresh - Processing 'AddingMetaTagsForImage'
+Modification::refresh - Done 'AddingMetaTagsForImage'
+----------------------------------------------------------------
+Modification::refresh - Processing 'Blog SEO'
+Modification::refresh - Done 'Blog SEO'
+----------------------------------------------------------------
+MOD: Easy Blog Simple for oc2011+
+FILE: admin/controller/common/menu.php
+CODE: return $this->load->view('common/menu.tpl', $data);
+LINE: 211
+FILE: admin/view/template/common/menu.tpl
+CODE: <li id="system"><a class="parent"><i class="fa fa-cog fa-fw"></i> <span><?php echo $text_system; ?></span></a>
+LINE: 122
+FILE: catalog/view/theme/default/template/common/footer.tpl
+CODE: <?php foreach ($informations as $information) { ?>
+LINE: 10
+FILE: catalog/controller/common/footer.php
+CODE: $data['informations'] = array();
+LINE: 28
+----------------------------------------------------------------
+Modification::refresh - Processing 'ExtraCODFees'
+Modification::refresh - Done 'ExtraCODFees'
+----------------------------------------------------------------
+Modification::refresh - Processing 'OpenURLWithSpecificOptionAndChangePriceByOptionChange'
+Modification::refresh - Done 'OpenURLWithSpecificOptionAndChangePriceByOptionChange'
+----------------------------------------------------------------
+Modification::refresh - Processing 'Remove Unusful Links'
+Modification::refresh - Done 'Remove Unusful Links'
+----------------------------------------------------------------
+Modification::refresh - Processing 'Sort By Price'
+Modification::refresh - Done 'Sort By Price'
+----------------------------------------------------------------
+2016-12-07 9:23:38 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+Modification::refresh - Processing 'Add Out of Stock Stamp'
+Modification::refresh - Done 'Add Out of Stock Stamp'
+----------------------------------------------------------------
+Modification::refresh - Processing 'Adding Blog Tracker To Home'
+Modification::refresh - Done 'Adding Blog Tracker To Home'
+----------------------------------------------------------------
+Modification::refresh - Processing 'Adding Tracker Integration'
+Modification::refresh - Done 'Adding Tracker Integration'
+----------------------------------------------------------------
+Modification::refresh - Processing 'AddingMetaTagsForImage'
+Modification::refresh - Done 'AddingMetaTagsForImage'
+----------------------------------------------------------------
+Modification::refresh - Processing 'Blog SEO'
+Modification::refresh - Done 'Blog SEO'
+----------------------------------------------------------------
+MOD: Easy Blog Simple for oc2011+
+FILE: admin/controller/common/menu.php
+CODE: return $this->load->view('common/menu.tpl', $data);
+LINE: 211
+FILE: admin/view/template/common/menu.tpl
+CODE: <li id="system"><a class="parent"><i class="fa fa-cog fa-fw"></i> <span><?php echo $text_system; ?></span></a>
+LINE: 122
+FILE: catalog/view/theme/default/template/common/footer.tpl
+CODE: <?php foreach ($informations as $information) { ?>
+LINE: 10
+FILE: catalog/controller/common/footer.php
+CODE: $data['informations'] = array();
+LINE: 28
+----------------------------------------------------------------
+Modification::refresh - Processing 'ExtraCODFees'
+Modification::refresh - Done 'ExtraCODFees'
+----------------------------------------------------------------
+Modification::refresh - Processing 'OpenURLWithSpecificOptionAndChangePriceByOptionChange'
+Modification::refresh - Done 'OpenURLWithSpecificOptionAndChangePriceByOptionChange'
+----------------------------------------------------------------
+Modification::refresh - Processing 'Remove Unusful Links'
+Modification::refresh - Done 'Remove Unusful Links'
+----------------------------------------------------------------
+Modification::refresh - Processing 'Sort By Price'
+Modification::refresh - Done 'Sort By Price'
+----------------------------------------------------------------

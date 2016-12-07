@@ -139,12 +139,12 @@
             <li><?php echo $text_manufacturer; ?> <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a></li>
             <?php } ?>
             <li><?php echo $text_model; ?> <?php echo $model; ?></li>
-            <?php if ($reward) { ?>
+            <?php if ($reward && $quantity) { ?> <!-- Ramy -->
             <li><?php echo $text_reward; ?> <?php echo $reward; ?></li>
             <?php } ?>
             <li><?php echo $text_stock; ?> <?php echo $stock; ?></li>
           </ul>
-          <?php if ($price) { ?>
+          <?php if ($price && $quantity) { ?> <!-- Ramy -->
           <ul class="list-unstyled">
             <?php if (!$special) { ?>
             <li>
@@ -171,8 +171,22 @@
             <?php } ?>
             <?php } ?>
           </ul>
-          <?php } ?>
+          <?php } else { ?>
+		  <!-- Ramy Start -->		  
+		  <ul class="list-unstyled">
+		  <li>
+              <h2><?php $product_is_not_available ?></h2>
+            </li>
+		  </ul>
+		  <ul class="list-unstyled">
+			<li>
+              <h3><?php echo $notify_me_label ?></h3>
+            </li>
+		  </ul>
+		  <?php } ?>
+		  <!-- Ramy End -->
           <div id="product">
+		  <?php if($quantity) { ?> <!-- Ramy -->
             <?php if ($options) { ?>
             <hr>
             <h3><?php echo $text_option; ?></h3>
@@ -317,6 +331,17 @@
               <br />
               <button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-primary btn-lg btn-block"><?php echo $button_cart; ?></button>
             </div>
+			<!-- Ramy Start -->
+			<?php } else { ?>
+			<div class="form-group">
+              <label class="control-label" for="input-user-email"><?php echo $email_label ?></label>
+              <input type="text" name="userEmail" value="your@email.com" size="2" id="input-user-email" class="form-control" />
+              <input type="hidden" name="notify_product_id" value="<?php echo $product_id; ?>" />
+              <br />
+              <button type="button" id="register_user_email" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-primary btn-lg btn-block"><?php echo $button_notify ?></button>
+            </div>
+			<?php } ?>
+			<!-- Ramy End -->
             <?php if ($minimum > 1) { ?>
             <div class="alert alert-info"><i class="fa fa-info-circle"></i> <?php echo $text_minimum; ?></div>
             <?php } ?>
@@ -338,7 +363,9 @@
             <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-515eeaf54693130e"></script>
             <!-- AddThis Button END -->
           </div>
-          <?php } ?>
+		  <!-- Ramy Start-->          
+		  <?php } ?>
+		  <!-- Ramy End -->
         </div>
       </div>
       <?php if ($products) { ?>

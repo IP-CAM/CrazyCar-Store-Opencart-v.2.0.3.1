@@ -1,0 +1,1 @@
+<div style="<?php if($abs){?>top:0px; position:fixed; <?php if($abs=='l'){echo "left";}else if($abs=='r'){echo "right";}?>:30px; <?php }?>" id="ads_left_<?php echo $mod;?>"><?php echo $code; ?><br /></div>

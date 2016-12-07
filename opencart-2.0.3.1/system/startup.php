@@ -8,7 +8,7 @@ if (version_compare(phpversion(), '5.3.0', '<') == true) {
 }
 
 if (!ini_get('date.timezone')) {
-	date_default_timezone_set('UTC');
+	date_default_timezone_set('Africa/Cairo');
 }
 
 // Windows IIS Compatibility

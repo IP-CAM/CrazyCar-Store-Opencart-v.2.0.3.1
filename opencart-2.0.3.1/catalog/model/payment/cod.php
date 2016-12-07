@@ -15,6 +15,10 @@ class ModelPaymentCOD extends Model {
 			$status = false;
 		}
 
+		// Ramy 20161207
+		if ((int)$address['zone_id'] != 1011 && (int)$address['zone_id'] != 1006)   // disable COD in case zone is not Cairo & Alex
+			$status = false;
+		
 		$method_data = array();
 
 		if ($status) {

