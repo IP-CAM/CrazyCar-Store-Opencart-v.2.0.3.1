@@ -1,6 +1,6 @@
 <?php
 // Text
-$_['text_title']				= 'PayPal';
-$_['text_reason']				= 'REASON';
-$_['text_testmode']				= 'Warning: The payment gateway is in \'Sandbox Mode\'. Your account will not be charged.';
-$_['text_total']				= 'Shipping, Handling, Discounts & Taxes';
+$_['text_title']				= 'الدفع بالكارت الائتماني - فيزا أو ماستر كارد';
+$_['text_reason']				= 'السبب';
+$_['text_testmode']				= '.تحذير : طريقة الدفع في وضع الاختبار. لن يتم اي خصم من حسابك';
+$_['text_total']				= 'الشحن , التجهيز, الخصومات والضرائب';
